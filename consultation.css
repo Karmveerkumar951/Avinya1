@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #79f6fc;
+}
+
+/* Header
+header {
+    background: linear-gradient(to right, #11998e, #38ef7d);
+    color: white;
+    padding: 19px 72px;
+    
+    font-size: 32px;
+    font-weight: bold;
+}
+ */
+/* Main Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/* Left Side Form */
+.consult-box {
+    background: #ffee99;
+    padding: 20px;
+    border-radius: 10px;
+    width: 550px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.consult-box h2 {
+    margin-bottom: 10px;
+}
+
+.consult-box input {
+    width: 100%;
+    padding: 10px 0px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.mobile-input {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-input select {
+    padding: 10px;
+    margin-right: 5px;
+   border-radius: 90px;
+}
+
+.verification-text {
+    font-size: 12px;
+    color: gray;
+}
+
+.continue-btn {
+    width: 100%;
+    padding: 10px;
+    background: gray;
+    color: white;
+    border: none;
+    border-radius: 60px;
+    cursor: not-allowed;
+}
+
+/* Right Side Image Slider */
+.slider-container {
+    margin-left: 100px;
+    text-align: center;
+}
+
+.slider-image {
+    width: 200px;
+    height: 200px;
+    transition: opacity 2s ease-in-out;
+}
+
+.slider-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}

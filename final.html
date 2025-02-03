@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avinya Journal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">AVINYA JOURNAL</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#journals">Journals</a></li>
+                <li><a href="#health-tracking">Health Tracking</a></li>
+                <li><a href="#consultations">Consultations</a></li>
+                 <li><a href="shop.html"> Shop Journals</a></li>
+         <li><a href="#contact">Contact</a></li>
+
+<li><a href="https://mediafiles.botpress.cloud/d79c1e98-5797-47b2-adbc-11d9b430a2ea/webchat/bot.html"><img src="chatbot.jpeg"  class="chatbot-icon "></a></li>
+
+                  </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+
+            <h1>Welcome to Avinya Journal</h1>
+            <p>Your Health and Wellness Companion</p>
+
+
+            <a href="#journals" class="cta-button">
+	Explore Journals</a>
+        </div>
+    </section>
+
+    <section id="journals" class="section">
+        <h2>OUR JOURNALS</h2>
+
+
+	
+
+        <div class="journal-container">
+            <div class="journal">
+                <img src="journal1.jpg" alt="Journal 1">
+                <h3>Daily Wellness Journal</h3>
+                <p>Track your daily activities and mood.</p>
+            </div>
+            <div class="journal">
+                <img src="journal2.jpg" alt="Journal 2">
+                <h3>Fitness Journal</h3>
+                <p>Monitor your fitness progress.</p>
+            </div>
+            <div class="journal">
+                <img src="journal3.jpg" alt="Journal 3">
+                <h3>Nutrition Journal</h3>
+                <p>Keep a record of your diet and nutrition.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="health-tracking" class="section">
+        <h1><font  size="6">HEALTH TRACKING</font></h1>
+
+        <div class="health-tracking-content">
+            <p><font size= "6" color =" black">Track various health metrics such as <br> exercise, water intake, mood, sleep, and food consumption.</font></p>
+            <form id="health-form">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+	<br>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required><br>
+
+                <label for="exercise">Exercise (minutes):</label> 
+                <input type="number" id="exercise" name="exercise" required><br>
+                
+                <label for="water">Water Intake (liters):</label>
+                <input type="number" id="water" name="water" step="0.1" required><br>
+                
+                <label for="mood">Mood (1-10):</label>
+                <input type="number" id="mood" name="mood" min="1" max="10" required><br>
+                
+                <label for="sleep">Sleep (hours):</label>
+                <input type="number" id="sleep" name="sleep" step="0.1" required><br>
+                
+                <label for="food">Food Consumption (calories):</label>
+                <input type="number" id="food" name="food" required><br>
+                
+                <button type="button" onclick="calculateHealth()">Submit</button>
+            </form>
+            <div id="health-summary"></div>
+        </div>
+    </section>
+
+
+
+
+
+<!--
+   <section id="consultations" class="section">
+        <h2>Doctor Consultations</h2>
+        <div class="consultations-content">
+            <p>Book consultations with our professional doctors easily through our platform.</p>
+            <img src="consultation.jpg" alt="Doctor Consultation">
+        </div>
+    </section>
+
+-->
+
+
+<section id="consultations">
+    <div class="consultation-container">
+        <div class="consultation-text">
+            <h2><span>Skip the travel!</span><br>Take Online Doctor Consultation</h2>
+            <p>Private consultation + Audio call · Starts at just ₹199</p>
+
+            <div class="doctor-status">
+                <div class="doctor-images">
+                    <img src="d1.jpeg" alt="Doctor 1">
+                    <img src="d2.jpeg" alt="Doctor 2">
+                    <img src="d3.jpeg" alt="Doctor 3">
+                </div>
+                <span class="online-status">+45 Doctors are online <span class="dot"></span></span>
+            </div>
+
+            <a href="consultation.html" class="consult-btn ">Consult Now</a>
+
+         
+            <div class="features">
+                <span>✔ Verified Doctors</span>
+                <span>📜 Digital Prescription</span>
+                <span>🆓 Free Followup</span>
+            </div>
+        </div>
+
+        <div class="consultation-image">
+            <img src="consultation.jpeg" alt="Consultation Image">
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="customer-reviews" class="section">
+    <h2>Customer Reviews</h2>
+    <div class="review-container">
+        <form class="review-form">
+            <input type="text" id="reviewer-name" placeholder="Your Name" required>
+            <textarea id="review-text" placeholder="Write your review..." required></textarea>
+            <div class="star-rating">
+                <span data-value="1">&#9733;</span>
+                <span data-value="2">&#9733;</span>
+                <span data-value="3">&#9733;</span>
+                <span data-value="4">&#9733;</span>
+                <span data-value="5">&#9733;</span>
+            </div>
+            <button type="button" onclick="submitReview()">Submit Review</button>
+        </form>
+        <div id="review-list" class="review-list"></div>
+    </div>
+</section>
+
+
+
+
+
+
+
+    <footer id="contact">
+        <div class="footer-content">
+
+            <p>Contact us at <a href="mailto:contact@avinya.com"> <font color="#ff2c2c">contact@avinya.com </font></a></p>
+
+            <p>Follow us on social media: 
+<font color="#ff2c2c" 
+                <a href="#"> Facebook</a> | <font color="#ff2c2c"
+                <a href="#">Twitter</a> | <font color="#ff2c2c"
+                <a href="#">Instagram</a>    
+            </p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+
+<button id="floating-btn"><a href="https://mediafiles.botpress.cloud/d79c1e98-5797-47b2-adbc-11d9b430a2ea/webchat/bot.html"><img src="chatbot.jpeg"  class="chatbot-icon "</a></button>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consult with a Doctor - Avinya</title>
+<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="consultation.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+       <!-- <div class="logo">AVINYA</div> -->
+   <nav>
+            <div class="logo">AVINYA JOURNAL</div>
+            <ul>
+                <li><a href="final.html#home">Home</a></li>
+                <li><a href="final.html#journals">Journals</a></li>
+                <li><a href="final.html#health-tracking">Health Tracking</a></li>
+                <li><a href="final.html#consultations">Consultations</a></li>
+                 <li><a href="shop.html"> Shop Journals</a></li>
+         <li><a href="final.html#contact">Contact</a></li>
+<li><a href="https://mediafiles.botpress.cloud/d79c1e98-5797-47b2-adbc-11d9b430a2ea/webchat/bot.html"><img src="chatbot.jpeg"  class="chatbot-icon "></a></li>
+
+                  </ul>
+        </nav>
+    </header>
+
+    <!-- Main Consultation Section -->
+    <div class="container">
+        <!-- Left Side - Consultation Form -->
+        <div class="consult-box">
+            <h2>Consult with a Doctor</h2>
+            <label>Tell us your symptom or health problem</label>
+            <input type="text" placeholder="Eg: fever, headache" minlength="4">
+
+            <label>Mobile number</label>
+            <div class="mobile-input">
+                <select>
+                    <option>🇮🇳 +91</option>
+                </select>
+                <input type="text" placeholder="Enter mobile number">
+            </div>
+
+            <p class="verification-text">A verification code will be sent to this number.</p>
+            <button class="continue-btn" disabled>Continue</button>
+        </div>
+
+        <!-- Right Side - Image Slider -->
+        <div class="slider-container">
+            <img src="images/image1.png" class="slider-image" id="slider">
+            <p class="slider-text" id="slider-text">Verified Doctors</p>
+        </div>
+    </div>
+
+    <script src="consultation.js"></script>
+
+<button id="floating-btn"><a href="https://mediafiles.botpress.cloud/d79c1e98-5797-47b2-adbc-11d9b430a2ea/webchat/bot.html"><img src="chatbot.jpeg"  class="chatbot-icon "</a></button>
+
+
+
+</body>
+</html>

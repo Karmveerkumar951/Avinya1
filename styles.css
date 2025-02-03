@@ -1,0 +1,581 @@
+/*main css*/
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, nav, section, footer, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #11998e, #38ef7d);
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+
+}
+    
+nav ul li {
+    margin-left: 1.5rem;
+
+}
+
+nav ul li a {
+    color: #fff;
+   /* text-decoration: none; 	*/
+    padding: 0rem 0rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+
+}
+ nav ul li a:hover {
+            background:  #2a5d67 ;
+            color: white;
+            transform: translateY(-7px);
+        }
+.chatbot-icon {
+    width: 33px;
+    height: 33px;
+border-radius: 20px;
+}
+
+
+.hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+ font-size:larger
+}
+
+.hero-content {
+    max-width: 800px;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation */
+.hero-content h1, 
+.hero-content p {
+    animation: float 2s ease-in-out infinite;
+}
+
+
+
+
+
+.cta-button {
+    background: #f90;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    display: inline-block;
+    transition: background 0.4s ease, transform 0.4s ease;
+    border-radius:30px
+}
+.cta-button:hover {
+
+    background: #ff6600;
+    transform: translateY(-7px);
+}
+
+.section {
+    padding: 3rem 10rem;
+    text-align: center;
+}
+
+
+
+
+
+
+@keyframes smoothBounce {
+    0% {
+        transform: scale(0.9);
+        background-color: rgba(0, 31, 63, 0.7); /* Deep Navy Blue */
+    }
+    50% {
+        transform: scale(1.1);
+        background-color: rgba(0, 31, 63, 0.85);
+    }
+    100% {
+        transform: scale(1);
+        background-color: rgba(0, 31, 63, 1);
+    }
+}
+
+/* Apply animation to "OUR JOURNALS" */
+#journals h2 {
+    animation: smoothBounce 2s ease-in-out infinite;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #FFD700; /* Gold Text */
+    text-align: center;
+    background-color: rgba(0, 31, 63, 1); /* Deep Navy Blue */
+    transition: all 0.3s ease-in-out;
+    text-shadow: 3px 3px 8px rgba(255, 215, 0, 0.6); /* Gold Glow */
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+
+
+
+
+
+
+
+
+
+
+.journal-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.journal {
+    max-width: 300px;
+    margin: 2rem;
+    text-align: left;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    perspective: 2000px;
+}
+
+.journal:hover {
+    transform: scale(1.05) rotateY(10deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.journal img {
+    width: 100%;
+    height: auto;
+transition: transform 0.6s ease;
+}
+
+.journal:hover img {
+    transform: rotateY(-20deg);
+}
+
+
+
+
+
+#health-tracking h1 {
+    background-color: #E6E6FA;
+    color: darkslategray;
+    padding: 5px 23px;
+    border-radius: 23px;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(1, 1, 1, 0.3);
+}
+
+
+
+.health-tracking-content, .consultations-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: centre;
+    
+}
+
+.health-tracking-content img, .consultations-content img {
+    max-width: 450px;
+    height: auto;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+form {
+    max-width: 2500px;
+    margin: 0 auto;
+    padding: 3rem;
+    background: /* #f4f4f4 */ #fffefa;
+    border-radius: 40px;
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+form button {
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#health-summary {
+    margin-top: 3rem;
+    padding: 1rem;
+    background: #fffefa;
+    border-radius: 30px;
+}
+
+
+.shop-title {
+    margin-top: 2rem;
+}
+
+.shop-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.shop-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem 0;
+    text-align: left;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.shop-item img {
+    max-width: 150px;
+    height: auto;
+    margin-right: 2rem;
+}
+
+.shop-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-details h3 {
+    margin-bottom: 0.5rem;
+}
+
+.shop-details p {
+    margin-bottom: 0.5rem;
+}
+
+.shop-details button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.shop-details img {
+    width: 20px;
+    height: 20px;
+}
+
+.whats-in-the-box {
+    margin-top: 2rem;
+    text-align: right;
+    width: 80%;
+    max-width: 1000px;
+}
+
+
+/* new part */
+
+
+
+
+
+
+
+
+
+/* Health Tracking Section with Background Image */
+
+
+#health-tracking {
+    position: relative;
+    background: url('health-bg.jpg') no-repeat center center/cover;
+    padding: 4rem 1rem;
+    text-align: center;
+    color: /* #fff */ gray;
+}
+
+/* Overlay to Control Opacity */
+
+#health-tracking::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Adjust opacity here */
+    z-index: 1;
+}
+
+/* Ensure content is above the overlay */
+.health-tracking-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Customer Review Section */
+#customer-reviews {
+    padding: 4rem 1rem;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.review-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.review-form input, .review-form textarea, .review-form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.review-form button {
+    padding: 0.5rem 2rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.star-rating span {
+    color: #ccc;
+}
+
+.star-rating span.active {
+    color: gold;
+}
+
+.review-list {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+
+
+/* Consultation Section */
+#consultations {
+    background-color: #FCEDEB;
+    padding: 60px 10%;
+}
+
+.consultation-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Text Content */
+.consultation-text {
+    max-width: 50%;
+}
+
+.consultation-text h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2E2E2E;
+    margin-bottom: 10px;
+}
+
+.consultation-text h2 span {
+    color: #3A3A3A;
+    font-weight: 600;
+}
+
+.consultation-text p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* Doctor Status */
+.doctor-status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+.doctor-images img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.online-status {
+    font-size: 14px;
+    color: #007F5F;
+    font-weight: 600;
+}
+
+.dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #00C853;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+/* Button */
+.consult-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 13px 30px;
+    border: none;
+    font-size: 16px;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.consult-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Features */
+.features {
+    margin-top: 35px;
+    font-size: 14px;
+    color: #444;
+}
+
+.features span {
+    margin-right: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Image Section */
+.consultation-image img {
+    max-width: 350px;
+    border-radius: 12px;
+}
+
+
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+#floating-btn {
+    animation: float 2s ease-in-out infinite;
+}
+
+
+/* Floating Button - Bottom Right */
+
+
+#floating-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 22px;
+    background-color: lightsalmon;
+    color: white;
+    border: none;
+    padding: 11px 12px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.4s ease, transform 0.2s ease;
+}
+
+#floating-btn:hover {
+    background-color: darksalmon;
+    transform: scale(1.1);
+
+}
+
+
+
+
+
